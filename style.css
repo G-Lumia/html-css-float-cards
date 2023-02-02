@@ -1,8 +1,11 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* utility */
 
 :root{
     --title: #e33371;
@@ -25,11 +28,15 @@ body{
     font-family: "Fredoka" , sans-serif;
 }
 
+/* contenitore del sito, centrato */
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
 }
+
+/* fonts */
 
 h1{
     color:var(--title);
@@ -51,23 +58,25 @@ a{
     color: var(--link);
 }
 
+/* card */
+
 .card{
     display: flex;
-    align-items: center;
-    margin-top: 30px;
-    margin-right:40px;
     float:left;
+    align-items: center;
+    text-align: left;
+    margin-top: 30px;
+    margin-right:40px; 
     width: calc(100% / 3 - 40px);
     background-color: var(--card);
     color:var(--text);
-    text-align: left;
 }
 
 .profile-pic{
     float:left;
-    margin-right: 10px;
     object-fit: scale-down;
     height: 80px;
+    margin-right: 10px;
 }
 
 .info{
